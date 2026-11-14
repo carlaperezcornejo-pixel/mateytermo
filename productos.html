@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Mates & Co.</title>
+    <link rel="stylesheet" href="css.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">MATES & CO.</a>
+            </div>
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button> 
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html" class="active">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-page-main">
+        <section class="products-hero">
+            <h1>Nuestros Productos</h1>
+            <p>Diseñados para conservar la temperatura perfecta y acompañar tus momentos.</p>
+        </section>
+
+        <section class="products-grid-container">
+            <div class="product-card">
+                <img src="../Pagina Web DW/Fotos/MATE.jpg" alt="Mate Imperial de Calabaza" class="product-img">
+                <h3 class="product-title">Mate Imperial</h3>
+                <p class="product-price">$28.500 ARS</p>
+                <p class="product-description">Calabaza seleccionada, forrado en cuero vacuno con herrajes de alpaca cincelados a mano.</p>
+                <a href="contacto.html" class="btn-buy">Consultar / Comprar</a>
+            </div>
+
+            <div class="product-card">
+                <img src="../Pagina Web DW/Fotos/TERMO.jpg" alt="Termo Bala Acero Inoxidable" class="product-img">
+                <h3 class="product-title">Termo Acero 1L</h3>
+                <p class="product-price">$45.000 ARS</p>
+                <p class="product-description">Doble capa de aislamiento térmico. Mantiene el agua caliente por más de 24 horas reales.</p>
+                <a href="contacto.html" class="btn-buy">Consultar / Comprar</a>
+            </div>
+
+            <div class="product-card">
+                <img src="../Pagina Web DW/Fotos/BOMBILLA.jpg" alt="Bombilla de Alpaca" class="product-img">
+                <h3 class="product-title">Bombilla Picos de Loro</h3>
+                <p class="product-price">$12.000 ARS</p>
+                <p class="product-description">Fabricada íntegramente en alpaca con filtro desmontable. No se tapa ni transmite calor.</p>
+                <a href="contacto.html" class="btn-buy">Consultar / Comprar</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>"Un buen mate une a cualquier ronda."</p>
+        <p>© 2026 Mates & Co. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
